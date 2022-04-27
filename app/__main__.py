@@ -23,6 +23,10 @@ def post(name):
     post = flatpages.get_or_404(path)
     return render_template('post.html', post=post)
 
+@app.route("/about/")
+def about():
+    return "Placeholder"
+
 @app.route('/pygments.css')
 def pygmentsCss():
     return pygments_style_defs('tango'), 200, {'Content-Type': 'text/css'}
