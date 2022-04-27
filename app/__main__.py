@@ -12,7 +12,6 @@ def homepage():
 
 @app.route("/post/")
 def listPosts():
-    print(list(flatpages))
     posts = [p for p in flatpages if p.path.startswith(app.config["POST_DIR"])]
     posts.sort(key=lambda item:item['date'], reverse=False)
     return render_template('postList.html', posts=posts)
