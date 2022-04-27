@@ -1,7 +1,9 @@
 from flask import Flask, render_template
 from flask_flatpages import pygments_style_defs
 
-from app import app, flatpages
+import sys
+
+from app import app, flatpages, freezer
 
 
 @app.route("/")
@@ -26,4 +28,7 @@ def pygmentsCss():
     return pygments_style_defs('tango'), 200, {'Content-Type': 'text/css'}
 
 if __name__ == "__main__":
-    app.run()
+    if len(sys.argv) > 1 and sys.argv[1] == "build":
+        freezer.freeze()
+    else:
+        app.run()
