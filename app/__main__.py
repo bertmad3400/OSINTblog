@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from flask_flatpages import pygments_style_defs
 
 from app import app, flatpages
 
@@ -19,6 +20,10 @@ def post(name):
     path = '{}/{}'.format(app.config["POST_DIR"], name)
     post = flatpages.get_or_404(path)
     return render_template('post.html', post=post)
+
+@app.route('/pygments.css')
+def pygmentsCss():
+    return pygments_style_defs('tango'), 200, {'Content-Type': 'text/css'}
 
 if __name__ == "__main__":
     app.run()
