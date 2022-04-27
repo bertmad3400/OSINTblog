@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/pageBase.css') }}">
+{% endblock %}
+{% block body %}
+<aside id="navbar">
+	<!--
+	<div class="logo-space">
+		<h2> <a href="{{ url_for('homepage') }}">OSINTer Blog</a> </h2>		
+	</div>
+	--!>
+	<ul class="link-list">
+		<li> <a id="selected" href="{{ url_for('homepage') }}">Home</a> </li>
+		<li> <a href="{{ url_for('about') }}">About</a> </li>
+		<li> <a href="{{ url_for('listPosts') }}">Posts</a> </li>
+		<li> <a href="https://osinter.dk">OSINTer Tool</a> </li>
+	</ul>
+</aside>
+{% block pageContent %}
+{% endblock %}
+{% endblock %}

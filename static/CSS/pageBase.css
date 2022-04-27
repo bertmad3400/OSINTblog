@@ -1,0 +1,25 @@
+aside#navbar {
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid rgb(229, 231, 235);
+}
+
+aside#navbar > * {
+	display: inline;
+}
+
+aside#navbar > ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 1rem 0 1rem 0;
+
+	display: flex;
+	justify-content: space-between;
+	width: 80ch;
+}
+
+aside#navbar > ul > li > a {
+	text-decoration: none;
+	font-style: italic;
+	font-weight: 200;
+}

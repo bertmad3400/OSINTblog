@@ -1,9 +1,14 @@
-{% extends "base.html" %}
+{% extends "pageBase.html" %}
 {% block head %}
 	<link rel="stylesheet" href="{{ url_for('pygmentsCss') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='CSS/post.css') }}">
+	{{ super() }}
 {% endblock %}
-{% block body %}
-	{{ post.html|safe }}
-	{{ post.title }}
-	{{ post.date }}
+{% block pageContent %}
+<main>
+	<article>
+		<section class="title"><h1>{{ post.title }}</h1> <time>{{ post.date }}</time></section>
+		{{ post.html|safe }}
+	</article>
+</main>
 {% endblock %}

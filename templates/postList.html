@@ -1,7 +1,5 @@
-{% extends "base.html" %}
-{% block head %}
-{% endblock %}
-{% block body %}
+{% extends "pageBase.html" %}
+{% block articleContent %}
 
 	{% for post in posts %}
 		<a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
