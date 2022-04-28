@@ -5,11 +5,12 @@ import sys
 
 from app import app, flatpages, freezer
 
+def getPage(pageName):
+    return flatpages.get_or_404(f"{app.config['POST_DIR']}/{pageName}")
 
 @app.route("/")
 def homepage():
-    post = flatpages.get_or_404(f"{app.config['POST_DIR']}/homepage")
-    return render_template("post.html", post=post)
+    return render_template("post.html", post=getPage("homepage"))
 
 @app.route("/post/")
 def listPosts():
@@ -19,13 +20,11 @@ def listPosts():
 
 @app.route('/post/<string:name>/')
 def post(name):
-    path = '{}/{}'.format(app.config["POST_DIR"], name)
-    post = flatpages.get_or_404(path)
-    return render_template('post.html', post=post)
+    return render_template('post.html', post=getPage(name))
 
 @app.route("/about/")
 def about():
-    return "Placeholder"
+    return render_template("post.html", post=getPage("about"))
 
 @app.route('/pygments.css')
 def pygmentsCss():
