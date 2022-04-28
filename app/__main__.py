@@ -1,12 +1,18 @@
 from flask import Flask, render_template
 from flask_flatpages import pygments_style_defs
 
+import werkzeug
+
 import sys
 
 from app import app, flatpages, freezer
 
 def getPage(pageName):
     return flatpages.get_or_404(f"{app.config['POST_DIR']}/{pageName}")
+
+@app.errorhandler(werkzeug.exceptions.HTTPException)
+def handleHTTPErrors(e):
+    return render_template("error.html", errorCode=e.code, errorName=e.name, errorDescription=e.description), e.code
 
 @app.route("/")
 def homepage():

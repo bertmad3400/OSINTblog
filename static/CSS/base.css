@@ -67,3 +67,7 @@ main {
 	height: fit-content;
 	font-style: italic;
 }
+
+.title h2 {
+	margin-bottom: 0;
+}

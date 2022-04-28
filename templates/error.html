@@ -1,0 +1,14 @@
+{% extends "pageBase.html" %}
+{% block head %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='CSS/error.css') }}">
+	{{ super() }}
+{% endblock %}
+{% block pageContent %}
+<main>
+	<section class="error-content">
+		<section class="title"><h1>{{errorCode}}</h1> <h2>Oops! {{errorName}}</h2></section>
+			<p class="description"> {{errorDescription}} </p>
+		</div>
+	</section>
+</main>
+{% endblock %}
