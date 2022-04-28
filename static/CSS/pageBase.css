@@ -23,6 +23,7 @@ aside#navbar > ul > li > a {
 	text-decoration: none;
 	font-style: italic;
 	font-weight: 200;
+	display: inline-block;
 }
 
 aside#navbar > ul > li > a#selected {
@@ -30,4 +31,27 @@ aside#navbar > ul > li > a#selected {
 	font-size: 1.3rem;
 	font-style: normal;
 	line-height: 1;
+	text-decoration: underline;
+	text-decoration-color: rgb(0, 0, 0, 0.3);
+}
+
+aside#navbar > ul > li > a#selected:after {
+}
+
+aside#navbar > ul > li > a:after {
+	content: '';
+	display: block;
+	width: 100%;
+	transform: scaleX(0);
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0, 0.3);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+aside#navbar > ul > li > a:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
 }
