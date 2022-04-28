@@ -11,3 +11,11 @@ article > time {
 	color: rgba(0, 0, 0);
 	font-weight: 300;
 }
+
+section.article-list > a {
+	text-decoration: none;
+}
+
+section.article-list > a > article > h2 {
+	text-decoration: underline;
+}
