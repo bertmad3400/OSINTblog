@@ -1,5 +1,7 @@
 title: Homepage
 date: 2022-04-27
+author: Bertmad
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ### Welcome to the blog for OSINTer
 
