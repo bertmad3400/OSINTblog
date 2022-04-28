@@ -60,18 +60,29 @@ main {
 	margin-bottom: 2rem;
 }
 
-.title h1 {
+.title h1, .title h2, .title h3, .title h4 {
 	font-weight: 100;
-	font-size: 2.5rem;
 	margin: 0;
 	height: fit-content;
+}
+
+.title h1 {
+	font-size: 2.5rem;
+}
+
+.title h2 {
+	font-size: 2rem;
+}
+
+.title h3 {
+	font-size: 1.7rem
+}
+
+.title h4 {
+	font-size: 1.3rem;
 }
 
 .title time {
 	height: fit-content;
 	font-style: italic;
-}
-
-.title h2 {
-	margin-bottom: 0;
 }
