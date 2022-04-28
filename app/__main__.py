@@ -8,7 +8,8 @@ from app import app, flatpages, freezer
 
 @app.route("/")
 def homepage():
-    return render_template("homepage.html")
+    post = flatpages.get_or_404(f"{app.config['POST_DIR']}/homepage")
+    return render_template("post.html", post=post)
 
 @app.route("/post/")
 def listPosts():
