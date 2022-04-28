@@ -24,3 +24,10 @@ aside#navbar > ul > li > a {
 	font-style: italic;
 	font-weight: 200;
 }
+
+aside#navbar > ul > li > a#selected {
+	font-weight: 300;
+	font-size: 1.3rem;
+	font-style: normal;
+	line-height: 1;
+}
