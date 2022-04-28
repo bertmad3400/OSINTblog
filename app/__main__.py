@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 from flask_flatpages import pygments_style_defs
 
 import werkzeug
@@ -35,6 +35,10 @@ def about():
 @app.route('/pygments.css')
 def pygmentsCss():
     return pygments_style_defs('tango'), 200, {'Content-Type': 'text/css'}
+
+@app.route('/img/<string:fileName>')
+def image(fileName):
+    return send_from_directory("../static/images", fileName)
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "build":
