@@ -30,7 +30,7 @@ def post(name):
 
 @app.route("/about/")
 def about():
-    return render_template("post.html", post=getPage("about"))
+    return render_template("post.html", post=getPage("aboutUs"))
 
 @app.route('/pygments.css')
 def pygmentsCss():
