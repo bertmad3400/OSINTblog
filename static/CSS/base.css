@@ -18,6 +18,13 @@ h1 {
 	margin-bottom: 2rem;
 }
 
+h5 {
+	font-weight: 200;
+	font-style: italic;
+	font-size: 1.2rem;
+	border-bottom: 1px solid rgb(0, 0, 0, 0.05)
+}
+
 h2, h3, h4, h5, p {
 	margin-bottom: 1rem;
 	color: rgb(0, 0, 0, 0.7)
