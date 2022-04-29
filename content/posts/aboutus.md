@@ -1,7 +1,5 @@
 # About us
 
-## The Project
-
 ## Bertam
 
 ## David
