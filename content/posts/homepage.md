@@ -1,21 +1,19 @@
 title: Homepage
-date: 2022-04-27
+date: 2022-07-02
 author: Bertmad
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: The homepage for the OSINTer blog
 
-### Welcome to the blog for OSINTer
+### Hi There! Welcome to the blog for OSINTer
+So you ended up on the homepage for the OSINTer project! Maybe someone sent you a link to this page, maybe you came looking for it yourself or maybe you just simply stumbled upon this by accident, but whatever brought you here, if you're curious about what in the world this is, keep reading and I will do my best to explain it.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id [est laborum.](https://www.lipsum.com/)
+OSINTer is - in a nutshell - a digital platform that has been developed for the last one and a half year with the ultimate goal of strengthening cybersecurity. You can read much more about what specifically this means on the [*About The Project*]({{ url_for('post', name='aboutTheProject') }}) page and about the people behind this on the [*About Us*]({{ url_for('post', name='aboutUs') }}) page, but these pages can be quite lengthy and filled with technical jargon - which is probably not what you're here for - so for now I'm going to keep it relatively short.
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas [nulla pariatur?](https://www.lipsum.com/)
+As mentioned, OSINTer is a digital platform that aims to help experts secure our digital infrastructure against potential threats in cyberspace. Specifically, OSINTer targets specalists within the Cyber Threat Intelligence (CTI) field, which are people who essentially do trend analysis within cyberspace, to help other experts prevent cyberattacks before they even happen and helps them, by supplying them with the information needed to do this trend analysis. It accomplishes this by looking into the constant stream of news and information we get bombarded with online, picks out the pieces of information that would be relevant to a CTI specalist, cleans it up and lastly organizes it in a way that allows handling the vast amounts of data and access to historical data.
 
+In other words, OSINTer is - at it's core - "just" an advanced news-aggregator and -feed, for the people who are helping us avoid potential catastrophic cyberattacks, but as far as I'm aware, it's also the first source-available platform ever to attempt this level of data archival, and as such it's a rather uniqeu project. Previously, it was being developed under a FOSS license, but due to complications regarding funding, it's currently unlicensed (all rights reserved), so if you would want to contribute (or just have some questions), please reach out [on email](mailto:skrivtilbertram@gmail.com), and we will figure something out. I would love to hear from you.
 
 <hr />
 
-![Test]({{ url_for('image', fileName='test.png') }})
-
-OSINTer is an open source intelligence gathering tool, designed to ease the intelligence gathering process by scraping reliable intelligence news sources, and presenting them in an easy to navigate UI, hosted as a webserver, to allow intelligence analysts to look at a great deal of intelligence collectively.
-
-For a demonstration of how it looks and works, have a look at our demo-site at the following link.
+For a demonstration of how OSINTer looks and works, have a look at our demo-site at the following link.
 
 → [Go to OSINTer](https://osinter.dk)
