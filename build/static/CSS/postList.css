@@ -1,0 +1,21 @@
+section.article-list {
+	height: fit-content;
+	width: 80ch;
+	padding-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+article > time {
+	font-size: 0.8rem;
+	font-style: italic;
+	color: rgba(0, 0, 0);
+	font-weight: 300;
+}
+
+section.article-list > a {
+	text-decoration: none;
+}
+
+section.article-list > a > article > h2 {
+	text-decoration: underline;
+}
