@@ -13,7 +13,7 @@ def prerender_jinja(text):
 app.static_folder = "../static"
 app.template_folder = "../templates"
 
-DEBUG = True
+DEBUG = False
 
 app.config.update(
     DEBUG=DEBUG,
@@ -22,6 +22,8 @@ app.config.update(
     FLATPAGES_ROOT="../content",
     POST_DIR="posts",
     FLATPAGES_HTML_RENDERER=prerender_jinja,
+    FREEZER_DESTINATION="../build",
+    FREEZER_RELATIVE_URLS=True,
 )
 
 flatpages = FlatPages(app)
