@@ -1,7 +1,7 @@
 title: About Us
 date: 2022-04-29
 author: David Thejl-Clayton
-description: A short description of OSINTer as a project, along with the people involved in it.
+description: A short description of the people involved in the development of OSINTer.
 
 ## Bertam
 

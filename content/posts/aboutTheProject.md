@@ -1,3 +1,8 @@
+title: About The Project
+date: 2022-07-03
+author: Bertmad
+description: A short description of OSINTer as a project
+
 ## The Project
 ### What problem does OSINTer attempt to solve?
 
@@ -13,5 +18,3 @@ Secondly, the content from the threat intelligence sources is archived and retri
 How do we intend to use OSINTer?
 
 Our current intent with OSINTer is deploying it internally where needed as to aid CTI team in easily identify relevant sources for future CTI reports, and to deploy a single central instance of OSINTer to start building an archive of historical data.
-
-In the future, it is hovewer also our intend to use OSINTer in conjunction with detection and analysis tools made further down the line. There is currently an effort ongoing to convert the backend of OSINTer from a RDBMS and files on the disk, to an Elasticsearch cluster, which would not only allow extensibility in a way that is currently impossible, potentially allowing for intercommunication between OSINTer instances, and allow for integration of future tools, like Project Grapevine plan proposed by Combitech.
