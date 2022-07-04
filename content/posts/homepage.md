@@ -21,4 +21,4 @@ In other words, OSINTer is - at it's core - "just" an advanced news-aggregator a
 
 For a demonstration of how OSINTer looks and works, have a look at our demo-site at the following link.
 
-→ [Go to OSINTer](/)
+[Go to OSINTer](https://osinter.dk)

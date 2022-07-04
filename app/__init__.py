@@ -23,7 +23,7 @@ app.config.update(
     POST_DIR="posts",
     FLATPAGES_HTML_RENDERER=prerender_jinja,
     FREEZER_DESTINATION="../build",
-    FREEZER_RELATIVE_URLS=True,
+    FREEZER_RELATIVE_URLS=False,
 )
 
 flatpages = FlatPages(app)
